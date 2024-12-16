@@ -3,7 +3,7 @@ import sqlite3, { Database } from "sqlite3";
 const db = new sqlite3.Database("./database.sqlite");
 const tablazat = async () => {
   await db.run(
-    "CREATE DATABASE IF NOT EXISTS cars(id INTIGER PRIMARY KEY AUTOINCREMENT, BRAND TEXT, MODEL TEXT, COLOR TEXT, YEAR INTIGER)"
+    "CREATE DATABASE IF NOT EXISTS cars(id INTIGER PRIMARY KEY AUTOINCREMENT, brand TEXT, model TEXT, color TEXT, year INTIGER)"
   );
 };
 
