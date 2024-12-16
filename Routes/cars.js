@@ -22,7 +22,7 @@ router.post("/car", async (req, res, next) => {
 
 router.put(`/car/${id}`, async (req, res, next) => {
   try {
-    const change = await dbQuery();
+    const change = await dbQuery("Update");
     res.status(201).json(change);
   } catch (err) {
     next(err);
